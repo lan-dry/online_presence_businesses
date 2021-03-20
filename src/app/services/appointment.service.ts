@@ -26,6 +26,19 @@ export class AppointmentService {
         );
     }
 
+    cancelAppoint(data: any): any {
+        console.log(data)
+        return this.http.post(`${environment.apiUrl}/c`, data)
+        .subscribe(
+            res => {
+                console.log(res);
+            },
+            err => {
+                console.log('ERROR : ' , err);
+            }
+        );
+    }
+
     modifyAppoint(data){
         this.http.post(`${environment.apiUrl}/appoint/modify`, data)
         .subscribe(

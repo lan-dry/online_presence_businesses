@@ -9,6 +9,7 @@ import { ComponentsModule } from '../components/components.module';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { HttpClientModule } from '@angular/common/http';
+import { CancelAppointmentComponent } from './cancel-appointment/cancel-appointment.component';
 
 const routes: Routes = [
     {
@@ -17,12 +18,7 @@ const routes: Routes = [
         { path: '', redirectTo: 'access', pathMatch: 'full' },
         // {path: 'access', component: AppointmentComponent},
         { path: 'make-appointment', component: AppointmentComponent },
-        // { path: 'contact-us', component: ContactComponent },
-        // { path: 'read-more-about-us', component: AboutComponent },
-        // { path: 'about-us', component: AboutComponent },
-        // { path: 'reset-forgotten-password', component: ForgotPasswordComponent },
-        // { path: 'recover-password/:code/:username/:id', component: RecoverPasswordComponent },
-        // { path: 'reset-your-password', component: ResetPasswordComponent },
+        { path: 'cancel-appointment', component: CancelAppointmentComponent },
       ]
     }
 ]
@@ -31,7 +27,7 @@ const routes: Routes = [
     declarations: [
         AccessComponent, 
         ModuleComponent, 
-        AppointmentComponent
+        AppointmentComponent, CancelAppointmentComponent
     ],
 
     imports: [
