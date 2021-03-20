@@ -24,12 +24,9 @@ export class AboutComponent implements OnInit {
         {name: "French Regular Pedi", duration: "25m"},
         {name: "Peppermint Spa", duration: "35m"},
         {name: "Green Tea Spa", duration: "35m"},
-        {name: "Silky Milk Spa", duration: ""},
-        {name: "Purissima Spa", duration: ""},
-        {name: "Organic Spa", duration: "35m"},
-        {name: "", duration: "50m"},
-        {name: "", duration: "60m"},
-        {name: "", duration: "75m"},
+        {name: "Silky Milk Spa", duration: "50m"},
+        {name: "Purissima Spa", duration: "60m"},
+        {name: "Organic Spa", duration: "75m"},
     ]
 
     constructor() { }
