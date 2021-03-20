@@ -96,3 +96,31 @@
         </div>
     </div>
 </div>
+
+<div class="durations">
+    <div class="container">
+        <div class="section-header text-center pb-4 pt-5">
+            <h3>Durations of our diffrent services</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">SERVICE</th>
+                        <th scope="col">DURATION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let d of duration; let i=index">
+                        <th scope="row"> {{i+1}} </th>
+                        <td> {{d.name}} </td>
+                        <td> {{ d.duration }} </td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+</div>
